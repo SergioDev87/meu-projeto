@@ -6,21 +6,26 @@
  
 
 body {
-  background-color: #fff;
+  
+  background-image: url(assets/img/logo.jpg);
+ 	background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  		
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   
 }
 
 .barra {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50px;
+  justify-content: space-between;
+  height: 60px;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -28,13 +33,87 @@ body {
   box-shadow: 0 0 5px;
 }
 
+.titulo > h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo > p {
+  text-align: center;
+}
+
+#btn-menu {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.icone-menu {
+  width: 35px;
+  height: 4px;
+  margin: 3px;
+  background-color: #BB0000;
+}
+
+
+a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.btn-troca-tema {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-right: 10px;
+  justify-content: end;
+  border: 2px solid gray;
+}
+
+.icone-troca-tema {
+  height: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/*css menu*/
+#menu {
+    width: 200px;
+    height: 100vh;
+    background: #bb0000;
+    opacity: 0.75;
+    color: #fff;
+    box-shadow: 0 0 5px #BB0000;
+    padding: 20px;
+    margin-left: -250px;
+    margin-top: 60px;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#menu > h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .content-circulo {
-  margin-top: 80px;
   height: 150px;
   width: 150px;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 5px;
+  margin: auto;
+  margin-top: 70px;
 }
 
 .content {
@@ -42,10 +121,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin:auto;
   margin-top: 1rem;
   height: 250px;
-  width: 90%;
-  background-color: #fff;
+  width: 85%;
+  background-color: #66CCFF;
+  opacity: 0.75;
+  
   padding: 1rem;
   box-shadow: 0 0 5px;
 }
@@ -53,5 +135,9 @@ body {
 #btn {
   height: 50px;
   width: 150px;
-  background-color: darkkhaki;
+  background-color: #BB0000;
+}
+
+#btn:active {
+  background-color: red;
 }
