@@ -134,3 +134,8 @@ a {
 #btn:active {
   background-color: red;
 }
+
+.img-produto {
+  width: 250px;
+  
+}

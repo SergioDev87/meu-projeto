@@ -2,9 +2,6 @@
 
 
 document.getElementById('btn-menu').addEventListener('click', () => abrirMenu());
-function chat() {
-  alert('oi');
-}
 
 let body = document.getElementById('body')
 let barra = document.getElementById('barra')
@@ -12,14 +9,14 @@ let tema = 'claro'
 
 function mudarTema(){
   if(tema === 'claro'){
-  barra.style.backgroundColor = '#222'
-  barra.style.color = '#fff'
-  body.style.backgroundColor = 'black'
-  body.style.color = 'gray'
-  tema = 'escuro'
+    barra.style.backgroundColor = '#222'
+    barra.style.color = '#fff'
+    body.style.backgroundColor = 'black'
+    body.style.color = 'gray'
+    tema = 'escuro'
 } else {
-  barra.style.backgroundColor = '#fff'
-  barra.style.color = 'black'
+    barra.style.backgroundColor = '#fff'
+    barra.style.color = 'black'
   body.style.backgroundColor = '#fff'
   body.style.color = 'black'
   tema = 'claro'
